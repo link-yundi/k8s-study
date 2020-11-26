@@ -8,7 +8,7 @@ spec:
   containers:
     - name: readiness-httpget-container
       image: 47.56.30.57/k8s/k8s-study:1.0
-      imagePullPolicy: IfNotPresentports
+      imagePullPolicy: IfNotPresent
       readinessProbe:
         httpGet:
           port: http
