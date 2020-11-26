@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: liveness-exec-container
-      images: busybox
+      image: busybox
       imagePullPolicy: IfNotPresent
       command: ["/bin/sh", "-c", "touch /tmp/live ; sleep 60; rm -rf /tmp/live; sleep 3600;"]
       livenessProbe:
