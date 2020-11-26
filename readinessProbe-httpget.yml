@@ -11,7 +11,7 @@ spec:
       imagePullPolicy: IfNotPresent
       readinessProbe:
         httpGet:
-          port: http
-          path: localhost:8080
+          port: 8080
+          path: /
         initialDelaySeconds: 1
         periodSeconds: 3
