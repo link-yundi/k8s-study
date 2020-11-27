@@ -8,7 +8,7 @@ public class HelloController {
 
     @GetMapping("/")
     public String index() {
-        return "current version: v1";
+        return "current version: v2";
     }
 
     @GetMapping("/hello")
