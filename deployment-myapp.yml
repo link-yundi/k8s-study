@@ -1,0 +1,20 @@
+# 用私有镜像测试deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: myapp
+  template:
+    metadata:
+      labels:
+        app: myapp
+    spec:
+      containers:
+        - name: myapp-container
+          image: 47.56.30.57/k8s/k8s-study:v1
+          ports:
+            - containerPort: 8080
