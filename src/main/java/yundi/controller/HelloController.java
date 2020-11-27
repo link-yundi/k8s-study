@@ -8,11 +8,12 @@ public class HelloController {
 
     @GetMapping("/")
     public String index() {
-        return "index";
+        return "current version: v1";
     }
 
     @GetMapping("/hello")
     public String hello() {
         return "Hello, k8s";
     }
+
 }
