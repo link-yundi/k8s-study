@@ -1,0 +1,23 @@
+# rs声明模板，在pod字段外面嵌套了一层rs的声明字段
+apiVersion: extensions/v1beta1
+kind: ReplicaSet
+metadata:
+  name: frontend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      tier: frontend
+  template:
+    metadata:
+      labels:
+        tier: frontend
+    spec:
+      containers:
+        - name: myapp
+          image: 47.56.30.57/k8s/k8s-study:1.0
+          env:
+            - name: GET_HOSTS_FROM
+              value: dns
+          ports:
+            - containerPort: 80
