@@ -1,5 +1,5 @@
 # rs声明模板，在pod字段外面嵌套了一层rs的声明字段
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
   name: frontend
