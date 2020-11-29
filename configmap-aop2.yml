@@ -12,7 +12,7 @@ spec:
           valueFrom:
             configMapKeyRef:
               name: special-config
-              key: special-config
+              key: special.how
         - name: SPECIAL_TYPE_KEY
           valueFrom:
             configMapKeyRef:
