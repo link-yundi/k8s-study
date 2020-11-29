@@ -1,0 +1,25 @@
+# 注入configmap
+apiVersion: v1
+kind: Pod
+metadata:
+  name: config-aop-pod
+spec:
+  containers:
+    - name: test-container
+      image: 47.56.30.57/k8s/k8s-study:v1
+      command: ["/bin/sh", "-c", "env"]
+      env:
+        - name: SPECIAL_LEVEL_KEY
+          valueFrom:
+            configMapKeyRef:
+              name: special-config
+              key: special.how
+        - name: SPECIAL_TYPE_KEY
+          valueFrom:
+            configMapKeyRef:
+              name: special-config
+              key: special.type
+      envFrom:
+        - configMapRef:
+            name: env-config
+  restartPolicy: Never
