@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: docker-registry
+type: Opaque
+data:
+  docker-server: 47.56.30.57
+  docker-email: yundi.xxii@outlook.com
+  docker-username: YWRtaW4=
+  docker-password: SGFyYm9yLnh4aWk2ODY4
