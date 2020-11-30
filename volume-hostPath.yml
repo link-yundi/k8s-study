@@ -9,7 +9,7 @@ spec:
       volumeMounts:
         - mountPath: /test-pod
           name: test-volume
-      imagePullPolicy: IfNorPresent
+      imagePullPolicy: IfNotPresent
   volumes:
     - name: test-volume
       hostPath:
