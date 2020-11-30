@@ -2,9 +2,9 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: docker-registry
-type: Opaque
+type: kubernetes.io/dockerconfigjson
 data:
-  docker-server: NDcuNTYuMzAuNTc=
-  docker-email: eXVuZGkueHhpaUBvdXRsb29rLmNvbQ==
-  docker-username: YWRtaW4=
-  docker-password: SGFyYm9yLnh4aWk2ODY4
+  docker-server: 47.56.30.57
+  docker-email: yundi.xxii@outlook.com
+  docker-username: admin
+  docker-password: Harbor.xxii6868
