@@ -10,4 +10,4 @@ spec:
         - containerPort: 8080
       imagePullPolicy: IfNotPresent
   imagePullSecrets:
-    - name: docker-registry
+    - name: myregistrykey
