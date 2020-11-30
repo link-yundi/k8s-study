@@ -4,14 +4,17 @@ metadata:
   name: test-pod
 spec:
   containers:
-    - image: k8s.gcr.io/test-webserver
+    - image: 47.56.30.57/k8s/k8s-study:v1
       name: test-container
       volumeMounts:
         - mountPath: /test-pod
           name: test-volume
+      imagePullPolicy: IfNorPresent
   volumes:
     - name: test-volume
       hostPath:
         # 主机上的文件夹路径
         path: /data
         type: Directory
+  imagePullSecrets:
+    - name: myregistrykey
