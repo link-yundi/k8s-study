@@ -17,3 +17,10 @@ spec:
                 operator: NotIn
                 values:
                   - k8s-node2
+# operator: 键值运算关系
+# In: label的值在某个列表中
+# NotIn: label的值不再某个列表中
+# Gt：label的值大于某个值
+# Lt：label的值小于某个值
+# Exists：某个label存在
+# DoesNotExist：某个label不存在
