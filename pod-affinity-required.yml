@@ -29,6 +29,6 @@ spec:
                   operator: In
                   values:
                     - pod-2
-          topologyKey: kubernetes.io/hostname
+            topologyKey: kubernetes.io/hostname
   imagePullSecrets:
     - name: myregistrykey

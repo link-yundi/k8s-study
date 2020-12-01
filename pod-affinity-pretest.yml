@@ -13,7 +13,7 @@ spec:
         nodeSelectorTerms:
           - matchExpressions:
               - key: kubernetes.io/hostname
-                operator: NotIn
+                operator: In
                 values:
                   - k8s-node1
   imagePullSecrets:
