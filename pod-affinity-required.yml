@@ -17,7 +17,7 @@ spec:
               - key: app
                 operator: In
                 values:
-                  - node1-pod
+                  - pod-1
           topologyKey: kubernetes.io/hostname
     podAntiAffinity:
       preferredDuringSchedulingIgnoredDuringExecution:
