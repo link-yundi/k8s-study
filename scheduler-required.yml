@@ -10,7 +10,7 @@ spec:
       image: 47.56.30.57/k8s/k8s-study:v1
   affinity:
     nodeAffinity:
-      requiredDuringSchedulingIgnoreDuringExecution:
+      requiredDuringSchedulingIgnoredDuringExecution:
         nodeSelectorTerms:
           - matchExpressions:
               - key: kubernetes.io/hostname
