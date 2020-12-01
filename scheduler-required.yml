@@ -12,7 +12,7 @@ spec:
     nodeAffinity:
       requiredDuringSchedulingIgnoreDuringExecution:
         nodeSelectorTerms:
-          - matchExpression:
+          - matchExpressions:
               - key: kubernetes.io/hostname
                 operator: NotIn
                 values:
