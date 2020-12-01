@@ -17,7 +17,7 @@ spec:
               - key: app
                 operator: In
                 values:
-                  - pod-1
+                  - node1-pod
           topologyKey: kubernetes.io/hostname
     podAntiAffinity:
       preferredDuringSchedulingIgnoredDuringExecution:
@@ -30,6 +30,5 @@ spec:
                   values:
                     - pod-2
           topologyKey: kubernetes.io/hostname
-
   imagePullSecrets:
     - name: myregistrykey
