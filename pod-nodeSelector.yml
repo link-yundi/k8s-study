@@ -18,5 +18,7 @@ spec:
         - name: myweb
           image: 47.56.30.57/k8s/k8s-study:v2
           imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
       imagePullSecrets:
         - name: myregistrykey
