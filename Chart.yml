@@ -1,0 +1,9 @@
+# 创建目录
+# mkdir ./hello-world
+# cd ./hello-world
+# 创建自描述文件 chart.yml，这个文件必须有name和version定义
+name: hello-world
+version: 1.0.0
+# 接下来需要创建模板文件，用于生成kubernetes资源清单(manifests)
+# mkdir ./templates
+# vim ./templates/deployment.yml
