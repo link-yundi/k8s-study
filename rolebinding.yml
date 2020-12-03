@@ -1,0 +1,14 @@
+# 将default命名空间的pod-reader Role授予jeff用户，此后jeff用户在default命名空间中将具有pod-reader的权限
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: read-pods
+  namespace: default
+subjects:
+  - kind: User
+    name: jeff
+    apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: pod-reader
+  apiGroup: rbac.authorization.k8s.io

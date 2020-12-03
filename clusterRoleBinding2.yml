@@ -1,0 +1,14 @@
+# 使用ClusterRoleBinding可以对整个集群中的所有命名空间资源权限进行授权；
+# 下面是授权manager组内所有用户在全部命名空间对secrets进行访问
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: read-secrets-global
+subjects:
+  - kind: Group
+    name: manager
+    apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: ClusterRole
+  name: secret-reader
+  apiGroup: rbac.authorization.k8s.io
