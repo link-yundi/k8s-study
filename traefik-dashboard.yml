@@ -11,7 +11,7 @@ spec:
   template:
     metadata:
       labels:
-        app: traefik-ingress
+        app: traefik-ingressche
     spec:
       containers:
         - name: traefik
