@@ -33,16 +33,16 @@ spec:
   selector:
     app: myapp
 ---
-apiVersion: extensions/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: myapp-ingress
 spec:
   rules:
-    - host: 159.138.30.196
+    - host: www.xxii.com
       http:
         paths:
-          - path: /myapp
+          - path: /
             backend:
               serviceName: myapp-svc
               servicePort: 8080
