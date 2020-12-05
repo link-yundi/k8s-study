@@ -32,19 +32,5 @@ spec:
       protocol: TCP
   selector:
     app: myapp
----
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: myapp-ingress
-spec:
-  rules:
-    - host: www.xxii.com
-      http:
-        paths:
-          - path: /
-  backend:
-    serviceName: myapp-svc
-    servicePort: 8080
 
 
