@@ -43,8 +43,8 @@ spec:
       http:
         paths:
           - path: /
-            backend:
-              serviceName: myapp-svc
-              servicePort: 8080
+  backend:
+    serviceName: myapp-svc
+    servicePort: 8080
 
 
