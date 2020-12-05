@@ -9,5 +9,7 @@ spec:
         paths:
           - path: /
             backend:
-              serviceName: myapp-svc
-              servicePort: 8080
+              service:
+                name: myapp-svc
+                port:
+                  number: 8080
