@@ -9,6 +9,9 @@ spec:
     matchLabels:
       app: traefik-ingress
   template:
+    metadata:
+      labels:
+        app: traefik-ingress
     spec:
       containers:
         - name: traefik
