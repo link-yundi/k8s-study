@@ -28,7 +28,7 @@ spec:
       targetPort: 8080
       protocol: TCP
     selector:
-      - app: traefik-ingress
+      app: traefik-ingress
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
