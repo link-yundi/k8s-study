@@ -4,8 +4,7 @@ metadata:
   name: myapp-ingress
 spec:
   rules:
-    - host: www.xxii.com
-      http:
+    - http:
         paths:
           - path: /
             pathType: Prefix
@@ -13,4 +12,4 @@ spec:
               service:
                 name: myapp-svc
                 port:
-                  number: 8080
+                  number: 8100
